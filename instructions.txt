@@ -1,0 +1,5 @@
+To work on the virtualenv:
+$ workon superlists
+
+To deactivate:
+$ deactivate
