@@ -3,3 +3,6 @@ $ workon superlists
 
 To deactivate:
 $ deactivate
+
+To run the server (required for the tests):
+$ python manage.py runserver
