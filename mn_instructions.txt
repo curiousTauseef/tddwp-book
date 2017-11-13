@@ -13,11 +13,18 @@ $ python functional_tests.py
 To run the unit test:
 $ python manage.py test
 
-To run the unit tests:
-$ python
+To create the database table (for development purposes):
+$ rm db.sqlite3
+$ python manage.py makemigrations
+
+To create the production database:
+$ python manage.py migrate
 
 5/11/2017:
 Finished chapter 4. Start chapter 5 next time.
 
 07/11/2017:
 Half way through chapter 5, see lists/tests.py change with ItemModelTest
+
+12/11/2017
+5/6s down the page on chapter 5. Search for 'will the functional test pass?'.
