@@ -28,3 +28,6 @@ Half way through chapter 5, see lists/tests.py change with ItemModelTest
 
 12/11/2017
 5/6s down the page on chapter 5. Search for 'will the functional test pass?'.
+
+13/11/2017 
+Start of chapter 7.
