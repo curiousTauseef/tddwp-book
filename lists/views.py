@@ -11,9 +11,8 @@ def view_list(request):
 
 # Create your views here.
 def home_page(request):
-	if request.method == 'POST':
-		Item.objects.create(text=new_item_text) #MN: Don't need to call save() with create.
-		return redirect('/lists/the-only-list-in-the-world/')
+	return render(request, 'home.html')
 
-	items = Item.objects.all()
-	return render(request, 'home.html', {'items': items})
+def new_list(request):
+	Item.objects.create(text=request.POST['item_text'])
+	return redirect('/lists/the-only-list-in-the-world/')
