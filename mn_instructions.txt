@@ -31,3 +31,6 @@ Half way through chapter 5, see lists/tests.py change with ItemModelTest
 
 13/11/2017 
 Start of chapter 7.
+
+16/11/2017
+2/3 into chapter 7, search for 'Green? Refactor'
