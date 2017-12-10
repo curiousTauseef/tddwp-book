@@ -25,7 +25,7 @@ SECRET_KEY = '24z1e_ql3k3gy@jtm98d$1yzrktomj9$^zhxt(@jkkt(((t78&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['staging.tddwpsuperlists.info']
+ALLOWED_HOSTS = ['staging.tddwpsuperlists.info', 'tddwpsuperlists.info']
 
 
 # Application definition
