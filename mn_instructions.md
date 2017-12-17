@@ -48,3 +48,7 @@ HOORAY! Oh, and a quick check on our to-do list:
 ## 6/12/2017
 Chapter 8, search for:
 A Few Things That Didn’t Make It
+
+## 14/12/2017
+Chapter 13, search for:
+def test_validation_errors
