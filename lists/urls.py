@@ -18,7 +18,7 @@ from lists import views
 
 urlpatterns = [
 # MN: home_page is a function in views.py
+# All of these start with a /lists/ (e.g. /lists/new)
     url(r'^new$', views.new_list, name='new_list'),
     url(r'^(\d+)/$', views.view_list, name='view_list'), # MN: (.+) is a capture group, which will get passed to the view as a parameter.
-    url(r'^(\d+)/add_item$', views.add_item, name='add_item'),
 ]
