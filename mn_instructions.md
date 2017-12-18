@@ -52,3 +52,7 @@ A Few Things That Didn’t Make It
 ## 14/12/2017
 Chapter 13, search for:
 def test_validation_errors
+
+# 17/12/2017
+Chapter 14, search for:
+Using the Form in a View with a GET request

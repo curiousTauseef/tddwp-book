@@ -7,19 +7,20 @@ from django.test import TestCase
 from django.http import HttpRequest
 
 from lists.views import home_page
+from lists.forms import ItemForm
 from django.template.loader import render_to_string
 
 from lists.models import Item, List #MN: for ItemModelTest
 
 class HomePageTest(TestCase):
-    
-    def test_only_saves_items_when_necessary(self):
-        self.client.get('/')
-        self.assertEqual(Item.objects.count(), 0)
 
-    def test_home_page_returns_correct_html(self):
+    def test_uses_home_template(self):
         response = self.client.get('/')
         self.assertTemplateUsed(response, 'home.html')
+
+    def test_home_page_uses_item_form(self):
+        response = self.client.get('/')
+        self.assertIsInstance(response.context['form'], ItemForm)
 
 class NewListTest(TestCase):
 

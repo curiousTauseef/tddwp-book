@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 from django.core.exceptions import ValidationError
 from django.shortcuts import redirect, render
 from lists.models import Item, List
+from lists.forms import ItemForm
 
 # Create your views here.
 
@@ -20,7 +21,7 @@ def view_list(request, list_id):
     return render(request, 'list.html', {'list': list_, 'error': error}) # 'list_' is a 'context'.
 
 def home_page(request):
-    return render(request, 'home.html')
+    return render(request, 'home.html', {'form': ItemForm()})
 
 def new_list(request):
     list_ = List.objects.create()
