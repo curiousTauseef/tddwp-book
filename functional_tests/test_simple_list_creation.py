@@ -28,6 +28,7 @@ class NewVisitorTest(FunctionalTest):
         # When she hits enter, the page updates, and now the page lists
         # "1: Buy peacock feathers" as an item in a to-do list
         inputbox = self.get_item_input_box()
+        inputbox.send_keys(Keys.ENTER)
         self.wait_for_row_in_list_table('1: Buy peacock feathers')
 
         # There is still a textbok inviting her to add another item. She
