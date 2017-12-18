@@ -20,7 +20,10 @@
 						{{ form.text }}
 						{% csrf_token %}
 						{% if error %}
-							<div class="form-group has-error">
+							<div class="form-group has-error"> <!-- this is from bootstrap -->
+								<span class="help-block">{{ error }}</span>
+							</div>
+						{% endif %}
 					</form>
 				</div>
 			</div>
