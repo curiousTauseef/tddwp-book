@@ -63,3 +63,10 @@ Start of Chapter 15
 # 26/12/2017
 Chapter 15, search for:
 Some integrity Errors Do Show Up on Save
+
+# 27/12/2017
+Chapter 15, search for:
+Personal opinion here:
+
+# 27/12/2017
+Start of Chapter 16
