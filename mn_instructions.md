@@ -74,3 +74,6 @@ Start of Chapter 16
 # 28/12/2017
 Chapter 16, search for:
 If you open the file using your web
+
+# 29/12/2017
+Start of Chapter 17.
