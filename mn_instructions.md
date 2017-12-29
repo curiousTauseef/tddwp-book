@@ -70,3 +70,7 @@ Personal opinion here:
 
 # 27/12/2017
 Start of Chapter 16
+
+# 28/12/2017
+Chapter 16, search for:
+If you open the file using your web
