@@ -77,3 +77,15 @@ If you open the file using your web
 
 # 29/12/2017
 Start of Chapter 17.
+
+# 01/12/2017
+Chapter 19, search for:
+ON MOCK CALL_ARGS
+
+# 05/01/2018
+Chapter 19, search for:
+It Works in Theory! Does It Work in Practice?
+
+# 05/02/2018
+Chapter 20, search for:
+Checking That It Works
