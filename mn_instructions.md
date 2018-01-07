@@ -86,6 +86,13 @@ ON MOCK CALL_ARGS
 Chapter 19, search for:
 It Works in Theory! Does It Work in Practice?
 
-# 05/02/2018
+# 05/01/2018
 Chapter 20, search for:
 Checking That It Works
+
+# 05/01/2018
+Chapter 20, search for:
+Our Final Explicit Wait Helper: A Wait Decorator
+
+# 06/01/2018
+Start of Chapter 21
