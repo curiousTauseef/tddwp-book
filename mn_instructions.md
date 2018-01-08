@@ -96,3 +96,7 @@ Our Final Explicit Wait Helper: A Wait Decorator
 
 # 06/01/2018
 Start of Chapter 21
+
+# 08/01/2018
+Chapter 21, search for:
+Using Fabric Directly from Python
