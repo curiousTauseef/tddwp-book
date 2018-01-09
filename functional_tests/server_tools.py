@@ -1,11 +1,11 @@
 from fabric.api import run
 from fabric.context_managers import settings
 
-def _get_manage_got_py(host):
+def _get_manage_dot_py(host):
     return f'~/sites/{host}/virtualenv/bin/python ~/sites/{host}/source/manage.py'
 
 def reset_database(host):
-    manage_dot_py = _get_manage_got_py(host)
+    manage_dot_py = _get_manage_dot_py(host)
     # This is the context manager
     with settings(host_string=f'martin@{host}'):
         run(f'{manage_dot_py} flush --noinput')

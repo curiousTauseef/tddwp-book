@@ -21,4 +21,5 @@ urlpatterns = [
 # All of these start with a /lists/ (e.g. /lists/new)
     url(r'^new$', views.new_list, name='new_list'),
     url(r'^(\d+)/$', views.view_list, name='view_list'), # MN: (.+) is a capture group, which will get passed to the view as a parameter.
+    url(r'^users/(.+)/$', views.my_lists, name='my_lists'),
 ]

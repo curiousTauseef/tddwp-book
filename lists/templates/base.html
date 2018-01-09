@@ -17,16 +17,22 @@
 			<div class="container-fluid">
 				<a class="navbar-brand" href="/">Superlists</a>
 				{% if user.email %}
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<a href="{% url 'my_lists' user.email %}">My lists</a>
+					</li>
+				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="navbar-text">Logged in as {{ user.email }}</li>
 					<!-- logout is the name of the url in accounts/urls.py -->
-					<li><a href="{% url 'logout' %}">Log out</a></li>
+					<li>
+						<a href="{% url 'logout' %}">Log out</a>
+					</li>
 				</ul>
 				{% else %}
 				<form class="navbar-form navbar-right" method="POST" action="{% url 'send_login_email' %}">
 					<span>Enter email to login:</span>
-					<input class="form-control" name="email" type="text" /> {% csrf_token %}
-					{% csrf_token %}
+					<input class="form-control" name="email" type="text" /> {% csrf_token %} {% csrf_token %}
 				</form>
 				{% endif %}
 			</div>
@@ -48,6 +54,7 @@
 			<div class="col-md-6 col-md-offset-3 jumbotron">
 				<div class="text-center">
 					<h1>{% block header_text %}{% endblock %}</h1>
+					{% block list_form %}
 					<form method="POST" action="{% block form_action %}{% endblock %}">
 						{{ form.text }} {% csrf_token %} {% if form.errors %}
 						<div class="form-group has-error">
@@ -56,6 +63,7 @@
 						</div>
 						{% endif %}
 					</form>
+					{% endblock %}
 				</div>
 			</div>
 		</div>
@@ -65,6 +73,12 @@
 				{% block table %} {% endblock %}
 			</div>
 		</div>
+
+		<dv class="row">
+			<div class="col-md-6 col-md-offset-3">
+				{% block extra_content %} {% endblock %}
+			</div>
+		</dv>
 
 	</div>
 
