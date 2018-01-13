@@ -103,3 +103,7 @@ Using Fabric Directly from Python
 
 # 08/01/2018
 Start of chapter 22
+
+# 09/01/2018
+Chapter 22, search for:
+A Decision Point: Whether
